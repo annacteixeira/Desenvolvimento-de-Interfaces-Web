@@ -52,8 +52,6 @@ header {
     box-sizing: border-box;
     position: sticky;
     z-index: 999;
-    position: relative;
-
 
     & .suggestions {
         margin-top: 20rem;
