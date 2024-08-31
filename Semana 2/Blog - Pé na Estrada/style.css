@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    color: #404040;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline {
+    display: inline;
+}
+
+ul {
+    list-style: none;
+}
+
+.titulo {
+    color: #cd536c;
+}
+
+.subtitulo {
+    color: #de6c83;
+}
+
+.texto {
+    color: #404040;
+}
+
+input {
+    padding: 0.5rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 0.8rem;
+    box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, .3);
+    font-size: 1.4rem;
+    font-family: inherit;
+    margin-bottom: 1rem;
+}
+
+input::placeholder {
+    color: #757575;
+}
+
+.botao_ok {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    background-image: linear-gradient(180deg, #ee859a, #ff9eb1);
+    border-radius: 3rem;
+    padding: 0.3rem 2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+li a {
+    color: #404040;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.92rem;
+}
+
+/* Cabeçalho */
+
+.header {
+    display: flex;
+    margin-left: 0;
+    align-items: center;
+    gap: 3.12rem;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    padding: 1.28rem 2.5rem;
+    width: 100%;
+    background-color: #fff9f2;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+
+    & img {
+        margin-right: 20rem;
+        left: 0;
+        width: 30rem;
+    }
+
+
+    & .menu-principal {
+        & ul {
+            display: flex;
+            align-items: center;
+            gap: 15rem;
+        }
+    }
+
+}
+
+.menu-principal ul li a:hover {
+    color: #cd536c;
+    transition: color 0.3s ease;
+}
+
+
+/* Conteúdo do site */
+
+.caixa-post {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 10rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    & img {
+        width: 40rem;
+        height: auto;
+    }
+
+    & .post-individual {
+        display: flex;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 60%;
+    }
+}
+
+.caixa-categoria ul li a:hover {
+    color: #cd536c;
+    transition: color 0.3s ease;
+}
+
+/* Barra lateral */
+
+.aside {
+    position: fixed;
+    display: flex;
+    top: 15rem;
+    right: 0rem;
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff9f2;
+    padding: 2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}

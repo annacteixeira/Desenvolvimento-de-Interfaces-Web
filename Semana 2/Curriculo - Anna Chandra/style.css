@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    color: #404040;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: #fff;
+}
+
+/* Cabeçalho */
+
+.header {
+    display: flex;
+    margin-left: 0;
+    padding: 5rem 0 5rem 40rem;
+    flex-direction: column;
+    top: 0;
+    position: sticky;
+    z-index: 0;
+    width: 100%;
+    background-color: #ecccff;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    gap: 2rem;
+    justify-content: space-around;
+
+    & .nome {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    & .cargo {
+        font-weight: 700;
+    }
+
+    & .informacoes-secundarias {
+        display: flex;
+    }
+
+    & .informacoes-contato {
+        padding-left: 10rem;
+    }
+}
+
+/* Conteúdo principal */
+
+.main {
+    padding-left: 40rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+
+    .experiencia{
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    & .experiencia-individual {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+
+        & .periodo {
+            font-style: italic;
+        }
+
+        & .atribuicoes {
+            padding-top: 1.5rem;
+        }
+    }
+
+    & .data-lateral {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10rem;
+        align-items: center;
+    }
+
+    & .educacao {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    & .curso {
+        margin-bottom: 2rem;
+
+        & .periodo {
+            font-style: italic;
+        }
+    }
+
+
+}
+
+/* Barra lateral */
+.aside {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    top: 0rem;
+    left: 0rem;
+    width: 30rem;
+    height: 100vh;
+    padding: 2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+    overflow-y: scroll;
+    scrollbar-width: none; /* remove a barra de rolagem do aside no firefox */
+    -ms-overflow-style: none;  /* remove a barra de rolagem do aside no internet explorer 10+ */
+
+    & img {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        height: 25rem;
+    }
+
+    & .descricao {  
+        font-size: 1.5rem;
+    }
+
+    & .habilidades, .linguas{
+        padding-top: 2rem;
+        font-weight: 700;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    & .descricao-habilidades, .descricao-linguas {
+        margin-left: 2rem;
+    }
+
+}
+
+.aside::-webkit-scrollbar {
+    display: none; /* remove a barra de rolagem do aside no chrome e safari) */
+}
