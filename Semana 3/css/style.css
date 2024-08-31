@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    color: #404040;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: #fff;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.logo-wetube {
+    width: 16rem;
+    height: 16rem;
+}
+
+
+aside {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 4rem 4rem;
+    border-right: 0.2rem #fff solid;
+    padding-right: 1rem;
+    width: 30rem;
+    box-sizing: border-box;
+
+    & h2 {
+        margin-top: 1rem;
+    }
+
+    & .explorar {
+        gap: 2rem;
+        flex-flow: column;
+    }
+
+    & svg {
+        display: inline-block;
+        align-items: center;
+        fill: #fff;
+    }
+
+    & p {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    
+    & p:hover {
+        cursor: pointer;
+    }
+}
