@@ -18,6 +18,24 @@ body {
     color: #fff;
 }
 
+.button {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    border: .15rem solid black;
+    background-image: linear-gradient(180deg, #ee859a, #ff9eb1);
+    border-radius: 3rem;
+    padding: 0.3rem 2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-image: linear-gradient(180deg, #c66d7f, #cf7f8f);
+    cursor: pointer;
+}
+
 
 .flex {
     display: flex;
@@ -28,37 +46,239 @@ body {
     height: 16rem;
 }
 
+header {
+    border-bottom: 0.2rem #fff solid;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    position: sticky;
+    z-index: 999;
+    position: relative;
+
+
+    & .suggestions {
+        margin-top: 20rem;
+        width: 100%;
+
+        & p {
+            display: inline-block;
+            justify-content: space-between;
+        }
+    }
+
+
+    & div.forms {
+        margin-top: 1rem;
+        gap: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    & fieldset {
+        flex-direction: column;
+        border: #0f0f0f;
+        width: 50%;
+        align-items: center;
+    }
+
+
+    & form {    
+        padding: 1rem;
+        background-color: #cb6ce6;
+        border: 0.1rem #fff solid;
+        border-radius: 0.4rem;
+        color: #0f0f0f;
+
+        &.login {
+            margin-left: 3rem;
+        }
+        &.cadastro {
+            margin-right: 3rem;
+        }
+    }
+
+
+
+    & .navg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: 2.6rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    & .navg p {
+        background-color: #47424296;
+        border: 0.2rem solid #fff;
+        padding: 0.5rem;
+        border-radius: .6rem;
+        transition: .2s ease-out;
+        
+    }
+    
+    & .navg p:hover{
+        background-color: #6c397a;
+        border: 0.2rem solid #6c397a;
+        cursor: pointer;
+    }
+}
+
+.container {
+    display: flex;
+}
 
 aside {
     flex-direction: column;
-    gap: 2rem;
-    margin: 0 4rem 4rem;
+    gap: 2.6rem;
     border-right: 0.2rem #fff solid;
-    padding-right: 1rem;
     width: 30rem;
     box-sizing: border-box;
-
-    & h2 {
-        margin-top: 1rem;
-    }
-
-    & .explorar {
-        gap: 2rem;
-        flex-flow: column;
-    }
+    padding: 3rem 0 3rem;
+    flex-shrink: 0;
 
     & svg {
-        display: inline-block;
-        align-items: center;
         fill: #fff;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    & .flex {
+        margin-left: 3rem;  
     }
 
     & p {
-        display: inline-block;
         margin-left: 1rem;
     }
-    
+
+    & h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
     & p:hover {
+        cursor: pointer;
+    }
+
+}
+
+main {
+    flex-grow: 1;
+    padding: 3rem;
+
+    & .video {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+        & .banner-video {
+            width: 30rem;
+            border-radius: 1rem;
+        }
+
+        & img:hover {
+            cursor: pointer;
+        }
+
+        & .logo-canal {
+            margin-top: 1rem;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            object-fit: contain;
+        }
+
+        & .video-desc {
+            gap: 1rem;
+        }
+
+        & .nome-canal {
+           color: #aaa;
+           font-weight: 100;
+           text-align: start;
+           font-size: 1.4rem;
+           padding-top: .8rem;
+        }
+
+        & p {
+            padding-top: 1.6rem;
+            font-weight: 700;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-wrap: nowrap;
+        }
+
+        & .item {
+            flex-direction: column;
+            text-align: center;
+            width: 30rem;
+        }
+    }
+
+    & button.more-video-button {
+        align-items: center;
+        padding: 1.4rem;
+        width: 22rem;
+        height: auto;
+        transition: .2s ease-in-out;
+        text-align: center;
+        
+    }
+
+    & button.more-video-button:hover {
+        background-image: linear-gradient(180deg, #c66d7f, #cf7f8f);
+        cursor: pointer;
+        
+    }
+    
+    .main-button{
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .caixa-pesquisa{
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    input {
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        height: 3rem;
+        width: 100%;
+        border: 0;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, .3);
+        font-size: 1.4rem;
+        font-family: inherit;
+        margin-bottom: 1rem;
+    }
+    
+    input::placeholder {
+        color: #757575;
+    }
+
+    .botao_ok {
+        text-align: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: 700;
+        background-image: linear-gradient(180deg, #ee859a, #ff9eb1);
+        border-radius: 0.8rem;
+        padding: 0.3rem 2rem;
+        box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+        border: .15rem solid black;
+        margin-bottom: 1.5rem;
+        width: 10%;
+        height: 3rem;
+    }
+    .botao_ok:hover{
+        background-image: linear-gradient(180deg, #c66d7f, #cf7f8f);
         cursor: pointer;
     }
 }

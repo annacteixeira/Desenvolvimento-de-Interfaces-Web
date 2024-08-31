@@ -11,80 +11,108 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
-    <nav>
-
-    </nav>
-    <main>
-
-    </main>
-    <aside class="flex">
+    <header class="flex">
         <img class="logo-wetube" src="assets/logo-wetube.png" alt="Logo Wetube">
 
-        <div class="flex">
-            <svg class="aside-svg" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
-                viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
-                <path d="m12 4.44 7 6.09V20h-4v-6H9v6H5v-9.47l7-6.09m0-1.32-8 6.96V21h6v-6h4v6h6V10.08l-8-6.96z"></path>
-            </svg>
-            <p>
-                Início
-            </p>
-        </div>
+        <div class="forms flex">
+            <fieldset>
+                <div>
+                    <p>Login:</p>
+                    <form class="login" action="#">
+                        <label for="email-login">E-mail:</label>
+                        <input type="email" id="email-login">
 
-        <div class="flex">
-            <svg class="aside-svg shorts" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
-                focusable="false" aria-hidden="true"
-                style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
-                <path
-                    d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
-                </path>
-            </svg>
-            <p>Shorts</p>
-        </div>
+                        <label for="password-login">Senha:</label>
+                        <input type="password" id="password-login">
 
-        <div class="flex">
-            <svg class="aside-svg subscriptions" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-                height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
-                <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path>
-            </svg>
-            <p>Inscrições</p>
-        </div>
+                        <button class="button">Login</button>
+                    </form>
+            </fieldset>
 
-        <hr>
+            <fieldset>
+                <p>Cadastre-se no Wetube:</p>
+                <form class="cadastro" action="#">
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro">
 
-        <div class="flex">
-            <svg class="aside-svg me" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
-                viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
-                <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path>
-            </svg>
-            <p>Meu canal</p>
-        </div>
+                    <label for="password-cadastro">Senha:</label>
+                    <input type="password" id="password-cadastro">
 
-        <div class="flex">
-            <svg class="aside-svg history" xmlns="http://www.w3.org/2000/svg" height="24"
-                style="pointer-events: none; display: inherit; width: 8%; height: 8%;" viewBox="0 0 24 24" width="24"
-                focusable="false" aria-hidden="true">
-                <g>
-                    <path
-                        d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z">
+                    <button class="button">Cadastrar</button>
+                </form>
+            </fieldset>
+
+            </section>
+            <nav class="flex navg">
+                <p>Todos</p>
+                <p>Música</p>
+                <p>Jogos</p>
+                <p>Programação</p>
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>Notícias</p>
+                <p>Computadores</p>
+            </nav>
+    </header>
+
+    <div class="container">
+        <aside class="flex">
+            <div class="flex">
+                <svg class="aside-svg" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
+                    viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                    style="pointer-events: none; display: inherit;">
+                    <path d="m12 4.44 7 6.09V20h-4v-6H9v6H5v-9.47l7-6.09m0-1.32-8 6.96V21h6v-6h4v6h6V10.08l-8-6.96z">
                     </path>
-                </g>
-            </svg>
-            <p>Histórico</p>
-        </div>
-        <hr>
+                </svg>
+                <p>Início</p>
+            </div>
+            <div class="flex">
+                <svg class="aside-svg shorts" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                    width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
+                    <path
+                        d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
+                    </path>
+                </svg>
+                <p>Shorts</p>
+            </div>
+            <div class="flex">
+                <svg class="aside-svg subscriptions" xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                    aria-hidden="true" style="pointer-events: none; display: inherit;">
+                    <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path>
+                </svg>
+                <p>Inscrições</p>
+            </div>
+            <hr>
+            <div class="flex">
+                <svg class="aside-svg me" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+                    height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                    style="pointer-events: none; display: inherit;">
+                    <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path>
+                </svg>
+                <p>Meu canal</p>
+            </div>
+            <div class="flex">
+                <svg class="aside-svg history" xmlns="http://www.w3.org/2000/svg" height="24"
+                    style="pointer-events: none; display: inherit;" viewBox="0 0 24 24" width="24" focusable="false"
+                    aria-hidden="true">
+                    <g>
+                        <path
+                            d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z">
+                        </path>
+                    </g>
+                </svg>
+                <p>Histórico</p>
+            </div>
 
-        <h2>Explorar</h2>
-        <section class="explorar flex">
+            <hr>
+
+            <h2>Explorar</h2>
             <div class="flex">
                 <svg class="aside-svg tendencies" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
                     height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <path
                         d="M14 6V3c-.85.44-1.7.88-2.55 1.33-1.41.74-2.9 1.34-4.17 2.32-1.13.87-2.02 2.05-2.58 3.37-.46 1.09-.7 2.29-.7 3.48v.14C4 18.26 7.58 22 12 22s8-3.74 8-8.36V2l-6 4zm0 9.7c0 1.82-1.34 3.3-3 3.3s-3-1.47-3-3.3c0-1.19.58-2.24 1.45-2.82L14 10v5.7z">
                     </path>
@@ -94,8 +122,7 @@
 
             <div class="flex">
                 <svg class="aside-svg shopping" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-                    width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
                     <path
                         d="M7 8c0 2.76 2.24 5 5 5s5-2.24 5-5h-1c0 2.21-1.79 4-4 4s-4-1.79-4-4H7zm9.9-2c-.46-2.28-2.48-4-4.9-4S7.56 3.72 7.1 6H4v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h-3.1zM12 3c1.86 0 3.43 1.27 3.87 3H8.13c.44-1.73 2.01-3 3.87-3zm7 17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V7h14v13z">
                     </path>
@@ -106,7 +133,7 @@
             <div class="flex">
                 <svg class="aside-svg music" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
                     height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <path
                         d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7zM9 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm9-12h-5V5h5v2z">
                     </path>
@@ -116,8 +143,7 @@
 
             <div class="flex">
                 <svg class="aside-svg movies" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-                    width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;">
                     <path
                         d="m22.01 4.91-.5-2.96L1.64 5.19 2 8v13h20V8H3.06l18.95-3.09zM5 9l1 3h3L8 9h2l1 3h3l-1-3h2l1 3h3l-1-3h3v11H3V9h2z">
                     </path>
@@ -128,7 +154,7 @@
             <div class="flex">
                 <svg class="aside-svg live-stream" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
                     height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <g>
                         <path
                             d="M14 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zM8.48 8.45l-.71-.7C6.68 8.83 6 10.34 6 12s.68 3.17 1.77 4.25l.71-.71C7.57 14.64 7 13.39 7 12s.57-2.64 1.48-3.55zm7.75-.7-.71.71c.91.9 1.48 2.15 1.48 3.54s-.57 2.64-1.48 3.55l.71.71C17.32 15.17 18 13.66 18 12s-.68-3.17-1.77-4.25zM5.65 5.63l-.7-.71C3.13 6.73 2 9.24 2 12s1.13 5.27 2.95 7.08l.71-.71C4.02 16.74 3 14.49 3 12s1.02-4.74 2.65-6.37zm13.4-.71-.71.71C19.98 7.26 21 9.51 21 12s-1.02 4.74-2.65 6.37l.71.71C20.87 17.27 22 14.76 22 12s-1.13-5.27-2.95-7.08z">
@@ -141,18 +167,18 @@
             <div class="flex">
                 <svg class="aside-svg games" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24"
                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <path clip-rule="evenodd"
                         d="m12 7.75-.772-.464-4.186-2.511L2.5 7.803v6.307L12 19.29l9.5-5.181V7.803l-4.542-3.028-4.186 2.511L12 7.75ZM12 6 7.814 3.488c-.497-.298-1.122-.283-1.604.039L1.668 6.555C1.251 6.833 1 7.3 1 7.803v6.307c0 .548.3 1.054.782 1.316l9.5 5.182c.447.244.989.244 1.436 0l9.5-5.182c.482-.262.782-.768.782-1.316V7.803c0-.502-.25-.97-.668-1.248L17.79 3.527c-.482-.322-1.107-.337-1.604-.039L12 6Zm3.5 6.25c0 .69-.56 1.25-1.25 1.25S13 12.94 13 12.25 13.56 11 14.25 11s1.25.56 1.25 1.25ZM7 8c-.414 0-.75.336-.75.75v1.5h-1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.5v1.5c0 .414.336.75.75.75s.75-.336.75-.75v-1.5h1.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-1.5v-1.5C7.75 8.336 7.414 8 7 8Zm10.75 3c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25Z"
                         fill-rule="evenodd"></path>
                 </svg>
                 <p>Games</p>
             </div>
-            
+
             <div class="flex">
                 <svg class="aside-svg news" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24"
                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <path clip-rule="evenodd"
                         d="M2 5.121V3l.94.94.56.56.5.5.94-.94.12-.12L6 3l.94.94.12.12L8 5l.94-.94.12-.12L10 3l.94.94.12.12L12 5l.94-.94.12-.12L14 3l.94.94.12.12L16 5l.94-.94.12-.12L18 3l.94.94.12.12L20 5l.5-.5.56-.56L22 3v16c0 1.105-.895 2-2 2H4c-1.105 0-2-.895-2-2V5.121ZM10.75 19.5h-4.5v-5.25h4.5v5.25Zm1.25 0V13H5v6.5H4c-.276 0-.5-.224-.5-.5V7.65l2.514-2.514.925.925L8 7.12l1.06-1.06.94-.94.94.94L12 7.12l1.06-1.06.94-.94.94.94L16 7.12l1.06-1.06.926-.925L20.5 7.65V19c0 .276-.224.5-.5.5h-8ZM19 9v2H5V9h14Zm-5 4h5v1.5h-5V13Zm5 3h-5v1.5h5V16Z"
                         fill-rule="evenodd"></path>
@@ -163,7 +189,7 @@
             <div class="flex">
                 <svg class="aside-svg sports" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24"
                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <path clip-rule="evenodd"
                         d="M6.5 3.5h11V9c0 3.038-2.462 5.5-5.5 5.5S6.5 12.038 6.5 9V3.5ZM5 3.5C5 2.672 5.672 2 6.5 2h11c.828 0 1.5.672 1.5 1.5V4h2c.552 0 1 .448 1 1v3c0 2.493-1.825 4.56-4.212 4.938-1.082 1.588-2.8 2.707-4.788 2.991V17.5h1.5c.828 0 1.5.672 1.5 1.5v3H8v-3c0-.828.672-1.5 1.5-1.5H11v-1.57c-1.987-.285-3.706-1.404-4.788-2.992C3.825 12.56 2 10.493 2 8V5c0-.552.448-1 1-1h2v-.5Zm0 1.75H3.25V8c0 1.508.89 2.808 2.174 3.403C5.15 10.654 5 9.845 5 9V5.25Zm13.576 6.153C19.86 10.808 20.75 9.508 20.75 8V5.25H19V9c0 .844-.15 1.654-.424 2.403ZM9.5 20.5V19h5v1.5h-5Z"
                         fill-rule="evenodd"></path>
@@ -174,7 +200,7 @@
             <div class="flex">
                 <svg class="aside-svg courses" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24"
                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <path clip-rule="evenodd"
                         d="m14.5 16.065.749-.434C17.196 14.505 18.5 12.404 18.5 10c0-3.59-2.91-6.5-6.5-6.5S5.5 6.41 5.5 10c0 2.404 1.304 4.505 3.251 5.631l.749.434V17.5h5v-1.435Zm1.5.865c2.391-1.383 4-3.969 4-6.93 0-4.418-3.582-8-8-8s-8 3.582-8 8c0 2.961 1.609 5.546 4 6.93V19h8v-2.07ZM16 20v.5c0 .552-.448 1-1 1h-1.063c-.024.09-.053.179-.09.265-.1.243-.247.463-.433.65-.185.185-.406.332-.649.433-.242.1-.502.152-.765.152s-.523-.052-.765-.152c-.243-.1-.463-.248-.65-.434-.185-.186-.332-.406-.433-.649-.036-.086-.065-.175-.088-.265H9c-.552 0-1-.448-1-1V20h8Z"
                         fill-rule="evenodd"></path>
@@ -185,16 +211,193 @@
             <div class="flex">
                 <svg class="aside-svg podcasts" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24"
                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
-                    style="pointer-events: none; display: inherit; width: 8%; height: 8%;">
+                    style="pointer-events: none; display: inherit;">
                     <path clip-rule="evenodd"
                         d="M7.278 4.933C8.675 3.999 10.318 3.5 12 3.5c1.681 0 3.325.499 4.722 1.433 1.398.934 2.488 2.261 3.13 3.814.644 1.553.813 3.262.485 4.911-.328 1.65-1.138 3.164-2.327 4.352-.293.293-.293.768 0 1.061.293.293.768.293 1.061 0 1.399-1.399 2.351-3.18 2.737-5.12.386-1.94.188-3.95-.57-5.778-.756-1.827-2.038-3.389-3.682-4.488C15.91 2.586 13.978 2 12 2c-1.978 0-3.911.586-5.556 1.685-1.644 1.1-2.926 2.66-3.683 4.488-.757 1.827-.955 3.838-.569 5.778.386 1.94 1.338 3.721 2.737 5.12.293.293.768.293 1.06 0 .293-.293.293-.768 0-1.06-1.188-1.19-1.998-2.704-2.326-4.353-.328-1.649-.16-3.358.484-4.91.643-1.554 1.733-2.881 3.13-3.815ZM12 7.5c-.89 0-1.76.264-2.5.758-.74.495-1.317 1.198-1.657 2.02-.341.822-.43 1.727-.257 2.6.174.873.603 1.675 1.232 2.304.293.293.293.768 0 1.06-.293.293-.768.293-1.06 0-.84-.839-1.411-1.908-1.643-3.072-.231-1.163-.112-2.37.342-3.466S7.68 7.67 8.667 7.01C9.653 6.351 10.813 6 12 6c1.187 0 2.347.352 3.333 1.011.987.66 1.756 1.597 2.21 2.693.454 1.096.573 2.303.342 3.466-.232 1.164-.803 2.233-1.642 3.073-.293.293-.768.293-1.061 0-.293-.293-.293-.768 0-1.061.63-.63 1.058-1.431 1.231-2.304.174-.873.085-1.778-.256-2.6-.34-.822-.917-1.525-1.657-2.02-.74-.494-1.61-.758-2.5-.758Zm.875 6.299C13.541 13.474 14 12.79 14 12c0-1.105-.895-2-2-2s-2 .895-2 2c0 .79.459 1.474 1.125 1.799V21c0 .483.392.875.875.875s.875-.392.875-.875v-7.201Z"
                         fill-rule="evenodd"></path>
                 </svg>
                 <p>Podcasts</p>
             </div>
+        </aside>
 
-        </section>
-    </aside>
+        <main>
+            <div class="caixa-pesquisa flex">
+                <input type="text" class="texto_pesquisa" placeholder="Digite sua busca...">
+                <button class="botao_ok">Pesquisar</button>
+            </div>
+            
+            <div class="video flex">
+                
+                <div class="item flex">
+                    <a href="https://youtu.be/IHMOu_KEW-0?si=2PO3NUD8VtMfq1HH" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/IHMOu_KEW-0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCtCwvXkBKbC9C6ojNIdZSl_91neQ"
+                            alt="Banner HTML5" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/gbB1dP_hDfkvC0M1G1e8UIIfIBymSBg_yuWnCQF8tkEVo0W0EgRvi82pEC4U3oWzD9WCt_0WLmo=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Escreva HTML como um profissional | HTML semântico na prática #html #html5">
+                            Escreva HTML como um profissional | HTML semântico na prática #html #html5
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Manual do Dev</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=S-TqflGxHd4" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/S-TqflGxHd4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1nURbXqI7z7RV7g-lwZpqIWQUwA"
+                            alt="Banner CSS3" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/mm438z6MQIz4cmM4mYCW9rVNb1GE13ECfOUzOymBdJGzCObpqQSV0nMVwQ2CNN7cGuPbdkiotw=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="TUTORIAL COMPLETO CSS MEDIA QUERY - Criando layouts responsivos na PRÁTICA">
+                            TUTORIAL COMPLETO CSS MEDIA QUERY - Criando layouts responsivos na PRÁTICA
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Fernanda Kipper | Dev</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=MombnkR3oD4" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/MombnkR3oD4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNHCoD1ALe8y0mQ-pxMcpScOj9vw"
+                            alt="Banner JavaScript" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/-kPp7Q9HemvXXn4yK8wbH9KFAvNeUTD6cCh1kmJRFE7GLtpdzIDhegtEfhcpa10xUyeKZUATvg=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Aprenda JavaScript em 10 min [Iniciantes]">
+                            Aprenda JavaScript em 10 min [Iniciantes]
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Hashtag Programação</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=nRcBvB0F_pE" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/nRcBvB0F_pE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3jovkmPHU5bx9glSE1dIXheYPEA"
+                            alt="Banner PHP" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/GlCfASttSHD62-TXyRTd_dbYAxwnz5OTccYXvS8z8twem7x6bU_tpCeG3Y0LGyZb-3ZpSmGbfA=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Aprendendo PHP do ZERO (material para iniciantes)">
+                            Aprendendo PHP do ZERO (material para iniciantes)
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Daniel Reis (@danielhe4rt)</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=pTB0EiLXUC8&t" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/pTB0EiLXUC8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpVqFCRnWUgcueKHsC1y5Pqnp9vw"
+                            alt="Banner POO" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/lCeCb47hCbXWFa0I4gi8uWDHzWSs7sjK4FDmk7lFEUMRNp6QRzIQOkwaKhwv7eNKZacRI2uR=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Object-oriented Programming in 7 minutes | Mosh">
+                            Object-oriented Programming in 7 minutes | Mosh
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Programming with Mosh</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=EpXYPB1rv4w" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/EpXYPB1rv4w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDR6yiKlnoacXp6m_Fw0gmO9o4pGw"
+                            alt="Banner Java" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/6m9Q-yad3FXuGLlAkfcWmkaThNPwT2TGRyfpELFzFZb5BqBYwo_XV_ia_c-k6m6JwAx7m_4B=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Como sair do ZERO em JAVA em 1h - com ‪@kipperdev‬">
+                            Como sair do ZERO em JAVA em 1h - com ‪@kipperdev‬
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Rocketseat</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=r9I4DuGmJ2Y" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/r9I4DuGmJ2Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBRLOJW9VFCauK1NuoWfWFxX8mShA"
+                            alt="Banner Javascript Jogo" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/1qMz-rH5iQI4GgCKPevtgYl_VMAfnOYJTDac4_xi8VSF-HPSKfWiiFLMpCAPI17JmWBF0sNDR0I=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Making a Game in JavaScript with No Experience">
+                            Making a Game in JavaScript with No Experience
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Goodgis</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=_gHr2Pe5LCY" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/_gHr2Pe5LCY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCwMg27CqtoyH12eemi4ZZLu37pUQ"
+                            alt="Banner React" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/qkd3xd3Ned4fWl29CEawDJkpNdfxXMKAjCgQjIHzRXO_scDXqny9mOPnpq0PNmn7dfpvFDy6Qg=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Aprendendo React do Zero, Conectando Back e Front End, e Consumindo API">
+                            Aprendendo React do Zero, Conectando Back e Front End, e Consumindo API
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">DevClub | Programação</p>
+                </div>
+
+                <div class="item flex">
+                    <a href="https://www.youtube.com/watch?v=l5VXbLNYu2U" target="_blank">
+                        <img class="banner-video"
+                            src="https://i.ytimg.com/vi/l5VXbLNYu2U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3KUZiz1ouPNBQBt_QIN1Ye4U7ygQ"
+                            alt="Banner PostgreSQL" />
+                    </a>
+
+                    <div class="video-desc flex">
+                        <img class="logo-canal" src="https://yt3.ggpht.com/-kPp7Q9HemvXXn4yK8wbH9KFAvNeUTD6cCh1kmJRFE7GLtpdzIDhegtEfhcpa10xUyeKZUATvg=s68-c-k-c0x00ffffff-no-rj"
+                            alt="Logo do Canal">
+                        <p title="Primeiros Passos no PostgreSQL">
+                            Primeiros Passos no PostgreSQL
+                        </p>
+                    </div>
+
+                    <p class="nome-canal">Hashtag Programação</p>
+                </div>
+
+            </div>
+            
+            <div class="main-button">
+                <button class="button more-video-button">Carregar mais</button>
+            </div>
+        </main>
+    </div>
+
 </body>
 
 </html>
