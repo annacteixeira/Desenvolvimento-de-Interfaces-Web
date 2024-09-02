@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    color: #0f0f0f;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    background-color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+span.bold {
+    font-weight: 700;
+}
+
+header {
+    & .banner {
+        align-items: center;
+        justify-content: center;
+        background-color: #ee9bc9;
+
+        & img {
+            width: 50rem;
+        }
+    }
+
+    & .contato {
+        background-color: #f5f0f5;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            width: 50rem;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 20rem);
+}
+
+aside {
+    flex-flow: column;
+    padding: 4rem;
+    background-color: #b46693;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+
+    & .menu ul {
+        list-style-type: none;
+    }
+
+    & .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    & .menu ul li a:hover {
+        color: #ee9bc9;
+    }
+
+    & fieldset {
+        padding-top: 2rem;
+        border: none;
+        margin-bottom: 2rem;
+    }
+
+    & .formulario, & .cadastro {
+        color: #fff;
+        display: block;
+    }
+
+    & .login label,
+    & .login input,
+    & .login button,
+    & .cadastro label,
+    & .cadastro input,
+    & .cadastro button {
+        display: block;
+        margin-bottom: 1rem;
+        width: 50%;
+    }
+
+}
+
+main {
+    flex-direction: column;
+
+    & .content {
+        margin-left: 40rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+
+        & h2, h3 {
+            padding-left: 30rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    & .main-text {
+        padding-bottom: 2rem;
+    }
+
+    & #content-page-video {
+        border-radius: 1.5rem;
+        width: 50rem;
+    }
+
+    & img {
+        width: 40rem;
+        border-radius: 1.5rem;
+    }
+
+    & .tabela-horarios {
+        margin-top: 7rem;
+        margin-left: 20rem;
+    }
+
+    & .contato {
+        text-align: start;
+    }
+
+    & .iframe {
+       margin-left: 30rem;
+    }
+}
+
+footer {
+    padding-top: 1.5rem;
+    background-color: #ee9bc9;
+    padding-left: 30rem;
+    padding-bottom: 5.8rem;
+
+    & #copyright-footer {
+        font-weight: 700;
+    }
+
+    & .contact-footer-list li {
+        list-style-type: none;
+    }
+
+    & .contact-footer-list li {
+        margin-bottom: 0.5rem;
+    }
+}

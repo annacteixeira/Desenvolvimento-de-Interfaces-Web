@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Instituto da Criança</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner flex">
+            <img src="assets/banner-header.png" alt="Banner - Instituto da Criança">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <div class="wrapper flex">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html"><span class="bold">Página Principal</span></a></li><br><br>
+                        <li><a href="sobre.html"><span class="bold">Sobre a Clínica</span></a></li><br><br>
+                        <li><a href="horario.html"><span class="bold">Horário de Atendimento</span></a></li><br><br>
+                        <li><a href="/contato.html"><span class="bold">Contato</span></a></li>
+                    </ul>
+
+                    <fieldset>
+                        <div class="formulario">
+                            <p><span class="bold">Login:</span></p>
+                            <form class="login" action="#">
+                                <label for="email-login">E-mail:</label>
+                                <input type="email" id="email-login">
+                
+                                <label for="password-login">Senha:</label>
+                                <input type="password" id="password-login">
+                
+                                <button class="header-button flex">Login</button>
+                            </form>
+                        </div>
+                    </fieldset>
+                
+                    <fieldset>
+                        <div class="formulario">
+                            <p><span class="bold">Cadastre-se:</span></p>
+                            <form class="cadastro" action="#">
+                                <label for="email-cadastro">E-mail:</label>
+                                <input type="email" id="email-cadastro">
+                
+                                <label for="password-cadastro">Senha:</label>
+                                <input type="password" id="password-cadastro">
+                
+                                <button class="header-button flex">Cadastrar</button>
+                            </form>
+                        </div>
+                    </fieldset>
+                </nav>
+            </div>
+        </aside>
+
+        <main flex>
+            <div class="content flex">
+                <div class="main-text">
+                    <p>
+                        Bem-vindo ao <span class="bold">Instituto da Criança</span>, onde cada sorriso conta uma história de
+                        cuidado e
+                        dedicação. Na
+                        nossa clínica pediátrica, priorizamos o bem-estar e o desenvolvimento saudável de bebês,
+                        crianças e
+                        jovens.
+                    </p>
+                    <p>
+                        Com uma equipe especializada e amorosa, oferecemos serviços abrangentes, desde cuidados
+                        básicos até acompanhamento durante <span class="bold">toda a infância e adolescência.</span>
+                    </p>
+                </div>
+                <video id="content-page-video" controls autoplay loop>
+                    <source src="assets/video.webm">
+                    Seu navegador não suporta vídeos
+                </video>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p id="copyright-footer">
+                &copy; Instituto da Criança - 2024
+            </p>
+            <p id="footer-contact">
+                Entre em contato conosco:
+            <ul class="contact-footer-list">
+                <li><span class="bold">Telefone:</span> (31)3333-3333 </li>
+                <li><span class="bold">E-mail:</span> institutodacrianca@email.com</li>
+                <li><span class="bold">Endereço:</span> Rua Qualquer, 333, Bairro Qualquer - Belo Horizonte, Minas Gerais
+                </li>
+            </ul>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
