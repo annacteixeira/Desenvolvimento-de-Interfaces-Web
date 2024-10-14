@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+}
+
+section {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    padding-left: 25px;
+    gap: 1100px;
+    align-items: center;
+    
+
+    & .logo img {
+        width: 200px;
+    }
+
+    & p {
+        font-size: 20px;
+    }
+}
+
+.carousel{
+    width: 700px;
+    margin: auto;
+
+    & .img-carousel {
+        width: 700px;
+    }
+
+    & h5 {
+        font-weight: 700;
+
+    }
+}
+
+
