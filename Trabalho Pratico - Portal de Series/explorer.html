@@ -9,14 +9,21 @@
     <title>Explorador</title>
 </head>
 <body>
-    <header class="d-flex align-items-center">
+    <header class="explorer-header d-flex align-items-center">
         <div class="logo">
             <a href="index.html"><img src="assets/img/logo-streamsquad.png" alt="Logo do StreamSquad"></a>
         </div>
 
-        <p class="explorer">
-            <a href="explorer.html"><span class="bold">Explorador</span></a>
-        </p>
+        <nav class="navbar navbar-light bg-light justify-content-between">
+            <a class="navbar-brand"></a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <img src="assets/img/icons/search.png" alt="Botão de busca">
+            </button>
+            </form>
+          </nav>
+
     </header>
 </body>
 </html>
