@@ -1,8 +1,11 @@
+/* Configurações Gerais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 :root {
     font-family: 'Montserrat', sans-serif;
@@ -12,17 +15,49 @@
 section {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 30px;
+
+    & h2 {
+        font-size: 35px;
+        color: #44A6A6;
+    }
 }
 
 .flex {
     display: flex;
+    flex-flow: column;
 }
+
+.bold {
+    font-weight: 700;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .flex-about-me {
+        flex-direction: column;
+    }
+
+    .authorship,
+    .about-me {
+        max-width: 100%;
+    }
+
+    .flex-authorship {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Cabeçalho */
 
 header {
     padding-left: 25px;
     gap: 1100px;
     align-items: center;
-    
+
 
     & .logo img {
         width: 200px;
@@ -30,15 +65,23 @@ header {
 
     & p {
         font-size: 20px;
+
+        & a {
+            text-decoration: none;
+            color: #F24B6A;
+        }
     }
 }
 
-.carousel{
-    width: 700px;
+/* Carrossel */
+
+.carousel {
+    width: 1000px;
+    height: 550px;
     margin: auto;
 
     & .img-carousel {
-        width: 700px;
+        width: 1000px;
     }
 
     & h5 {
@@ -47,4 +90,98 @@ header {
     }
 }
 
+/* Cards */
 
+.card {
+    text-align: center;
+    background-color: #F24B6A;
+
+    & .card-title {
+        background-color: #F2E3D5;
+        border-radius: 15px;
+        color: #A62317;
+        padding: 5px;
+    }
+
+    & .card-body {
+        background-color: #F24B6A;
+        color: #fff;
+    }
+
+    & .card-img-top {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 350px;
+        object-fit: contain;
+    }
+
+    & .card-footer {
+        background-color: #F2E3D5;
+    }
+
+}
+
+
+/* Sobre Mim */
+.profile-picture {
+    & img {
+        width: 150px;
+    }
+}
+
+.flex-about-me {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.about-me {
+    flex: 1;
+}
+
+.authorship {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.flex-authorship {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.profile-picture img {
+    width: 100px;
+}
+
+.author-info p{
+    margin: 5px 0; 
+}
+.social-media {
+    margin-top: 20px;
+    flex-flow: row;
+    gap: 5px;
+
+    & a {
+        margin-right: 10px;
+    }
+
+    & img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+.author {
+    & h3 {
+        font-size: 20px;
+        color: #0cb5ed;
+    }
+}
