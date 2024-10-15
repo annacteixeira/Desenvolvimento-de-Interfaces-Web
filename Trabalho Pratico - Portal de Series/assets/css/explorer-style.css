@@ -1,0 +1,151 @@
+/* explorer.html */
+
+/* Configurações Gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+}
+
+section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+
+    & h2 {
+        font-size: 35px;
+        color: #44A6A6;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+h3 {
+    font-size: 20px;
+    color: #0cb5ed;
+}
+
+
+/* Cabeçalho e Barra de Pesquisa */
+
+header {
+    padding-left: 25px;
+    gap: 890px;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+
+    position: sticky;
+
+    & .logo img {
+        width: 200px;
+    }
+
+    & p {
+        font-size: 20px;
+
+        & a {
+            text-decoration: none;
+            color: #F24B6A;
+        }
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+
+
+    & .form-input {
+        padding: 10px 100px 10px 100px;
+        background-color: #C9EBF2;
+        border: none;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .form-input:focus {
+        outline: none;
+        border: none;
+    }
+
+    & .btn {
+        padding: 6px;
+        background-color: #C9EBF2;
+        border: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    
+        & img {
+            padding-right: 10px;
+            width: 30px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        & :hover {
+            cursor: pointer;
+        }
+
+    }
+}
+
+/* Filtros de Pesquisa */
+
+.container {
+    flex-flow: column;
+}
+
+.search-filters {
+    background-color: #44A6A6;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+
+    box-shadow: 3px 3px 3px 3px #C9EBF2;
+    text-align: center;
+
+    & h3 {
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    & .dropdown-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: -200px;
+        gap: 10px;
+
+        & label {
+            color: #fff;
+        }
+
+        & select {
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        & :focus {
+            outline: none;
+        }
+    }
+}
+
+
+

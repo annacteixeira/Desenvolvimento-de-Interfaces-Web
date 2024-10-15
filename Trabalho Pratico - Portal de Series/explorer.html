@@ -1,29 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/explorer-style.css">
 
-    <title>Explorador</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Explorador</title>
 </head>
+
 <body>
-    <header class="explorer-header d-flex align-items-center">
-        <div class="logo">
-            <a href="index.html"><img src="assets/img/logo-streamsquad.png" alt="Logo do StreamSquad"></a>
+  <header class="explorer-header flex">
+    <div class="logo">
+      <a href="index.html"><img src="assets/img/logo-streamsquad.png" alt="Logo do StreamSquad"></a>
+    </div>
+
+    <nav>
+      <form action="#" class="form">
+        <input class="form-input" type="search" name="search-bar" id="search-bar" placeholder="Pesquisar..."
+          aria-label="Pesquisa">
+        <button class="btn" type="submit">
+          <img src="assets/img/icons/search.png" alt="Botão de busca">
+        </button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filters-and-shows">
+      <div class="container flex">
+        <div class="flex search-filters">
+          <h3>Filtros de Pesquisa</h3>
+
+          <div class="dropdown-menu flex">
+            <label for="cars">Ordenar por:</label>
+            <select name="cars" id="cars">
+              <option value="seen-more">Mais Vistos</option>
+              <option value="more-recent">Mais Recentes</option>
+              <option value="best-rating">Melhores Avaliações</option>
+              <option value="worst-rating">Piores Avaliações</option>
+            </select>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <nav class="navbar navbar-light bg-light justify-content-between">
-            <a class="navbar-brand"></a>
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                <img src="assets/img/icons/search.png" alt="Botão de busca">
-            </button>
-            </form>
-          </nav>
+    <div class="filtered-shows flex">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </header>
+  </main>
+
+  <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
