@@ -1,7 +1,4 @@
-/* explorer.html */
-
 /* Configurações Gerais */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,11 +11,9 @@
 }
 
 section {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
+    padding: 30px;
 
-    & h2 {
+    h2 {
         font-size: 35px;
         color: #44A6A6;
     }
@@ -32,33 +27,33 @@ section {
     display: flex;
 }
 
+/* Estilos Específicos */
 h3 {
     font-size: 20px;
     color: #0cb5ed;
 }
 
-
 /* Cabeçalho e Barra de Pesquisa */
-
 header {
-    padding-left: 25px;
-    gap: 890px;
+    padding: 10px 25px;
+    gap: 10px;
     align-items: center;
     border-bottom: 2px solid #ccc;
-
     position: sticky;
+    display: flex;
+    justify-content: space-between;
+}
 
-    & .logo img {
-        width: 200px;
-    }
+header .logo img {
+    width: 150px;
+}
 
-    & p {
-        font-size: 20px;
+header p {
+    font-size: 20px;
 
-        & a {
-            text-decoration: none;
-            color: #F24B6A;
-        }
+    a {
+        text-decoration: none;
+        color: #F24B6A;
     }
 }
 
@@ -69,7 +64,7 @@ header {
     border-radius: 20px;
     padding: 5px;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     overflow: hidden;
 }
 
@@ -100,29 +95,23 @@ header {
 }
 
 /* Filtros de Pesquisa */
-
-.container {
-    flex-flow: column;
-}
-
-.search-filters .filter-dropdown {
-    display: flex;
-    flex-direction: column; /* Colocar itens verticalmente */
-    align-items: center; /* Centralizar itens horizontalmente */
-    gap: 10px; /* Espaço entre os elementos */
-    margin-top: 20px; /* Ajustar margem superior */
-    font-weight: 600;
-}
-
 .search-filters {
     width: 100%;
 }
 
+.search-filters .filter-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
 .search-filters .filter-dropdown select {
-    padding: 10px; /* Aumentar o padding para mais espaço dentro do dropdown */
+    padding: 10px;
     border-radius: 10px;
     border: none;
-
 }
 
 .search-filters .filter-dropdown select:focus {
@@ -130,31 +119,30 @@ header {
     border: none;
 }
 
-
-/* Layout da seção principal que contém filtros e cards */
+/* Layout da seção principal */
 .filters-and-shows {
     display: flex;
     justify-content: space-between;
-    gap: 30px; /* Espaçamento entre filtros e cards */
-    flex-wrap: nowrap; /* Impede quebra de linha dos elementos */
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .filtered-shows .col {
-    flex: 1 0 31%; /* 3 cards por linha */
+    flex: 1 0 31%;
     margin-bottom: 20px;
     margin-right: 2%;
 }
 
 .filter-dropdown {
-    width: 100%; /* O dropdown ocupará 100% da largura do seu contêiner */
-    padding: 10px; /* Adiciona um espaçamento interno adequado */
-    margin-top: 10px; /* Espaçamento entre o título e o dropdown */
-    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
 .card img {
     width: 100%;
-    height: auto; /* Assegura que a imagem mantenha a proporção */
+    height: auto;
 }
 
 /* Contêiner dos filtros */
@@ -162,7 +150,7 @@ header {
     background-color: #44A6A6;
     padding: 20px;
     width: 300px;
-    height: auto; /* Alterado para ajustar dinamicamente a altura */
+    height: auto;
     border-radius: 20px;
     box-shadow: 3px 3px 3px 3px #C9EBF2;
     text-align: center;
@@ -170,16 +158,87 @@ header {
 
 .search-filters h3 {
     color: #fff;
-    margin-bottom: 20px; /* Adicionado espaçamento abaixo do título */
+    margin-bottom: 20px;
 }
 
 /* Cards ajustados para ocupar o restante do espaço */
 .filtered-shows {
-    flex: 1; /* Faz com que os cards ocupem o restante do espaço disponível */
+    flex: 1;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    width: 100%; /* Agora os cards ocupam 100% da largura disponível */
+    width: 100%;
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filters-and-shows {
+        flex-direction: column;
+    }
+
+    .search-filters {
+        width: 100%;
+    }
+
+    .filtered-shows .col {
+        flex: 1 0 48%;
+        margin-right: 0;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
+
+/* Responsividadepara Celulares */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    header {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .filters-and-shows {
+        flex-direction: column;
+    }
+
+    .search-filters {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .filtered-shows .col {
+        flex: 1 0 100%;
+        margin-bottom: 15px;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h5.card-title {
+        font-size: 16px;
+    }
 }
