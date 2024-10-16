@@ -126,7 +126,7 @@ header {
     & .card-img-top {
         padding: 15px;
         width: 100%;
-        height: auto;
+        height: 440px;
         object-fit: contain;
     }
 
@@ -138,8 +138,9 @@ header {
 /* Responsividade dos Cards */
 @media (max-width: 1024px) {
     .card .card-img-top {
-        height: auto;
+        height: 250px;
     }
+    
 }
 
 @media (max-width: 768px) {
