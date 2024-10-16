@@ -36,24 +36,26 @@ h3 {
 /* Cabeçalho e Barra de Pesquisa */
 header {
     padding: 10px 25px;
-    gap: 10px;
-    align-items: center;
-    border-bottom: 2px solid #ccc;
-    position: sticky;
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.5);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 
-header .logo img {
-    width: 150px;
-}
+    & .logo img {
+        width: 200px;
+    }
 
-header p {
-    font-size: 20px;
+    & p {
+        font-size: 20px;
 
-    a {
-        text-decoration: none;
-        color: #F24B6A;
+        & a {
+            text-decoration: none;
+            color: #F24B6A;
+        }
     }
 }
 

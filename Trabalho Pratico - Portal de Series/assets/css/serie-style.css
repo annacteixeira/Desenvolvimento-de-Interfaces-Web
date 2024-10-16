@@ -15,7 +15,7 @@ section {
 }
 
 .title-h2 {
-    padding: 30px;
+    padding: 10px;
     font-size: 35px;
     color: #44A6A6;
 }
@@ -155,32 +155,37 @@ header {
 }
 
 /* Carrossel */
+.cast {
+    background-color: rgb(242, 75, 106, 0.6);
+}
 .carousel {
-    width: 1100px;
-    height: 500px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+}
 
-    & h5 {
-        font-weight: 700;
-    }
+.carousel .img-carousel {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.carousel h5 {
+    font-weight: 700;
 }
 
 /* Responsividade do Carrossel */
 @media (max-width: 768px) {
     .carousel {
-        width: 100%;
         height: auto;
+        width: 100%;
     }
 
-    .carousel h5 {
-        font-size: 18px;
-    }
-    .container {
-        flex-wrap: wrap;
-    }
-    .main-img img {
-        height: auto;
+    .carousel .img-carousel {
         width: 100%;
+        height: auto;
     }
 }
 
@@ -202,6 +207,7 @@ header {
     .card-img-top {
         height: auto;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -213,10 +219,13 @@ header {
     .card-img-top {
         height: auto;
     }
+
     .main-img img {
         height: auto;
-        width: 90%;
+        width: 100%;
+        flex-wrap: wrap;
     }
+
 }
 
 /* Informações */
@@ -234,4 +243,20 @@ header {
     height: 50px;
     object-fit: contain;
     padding-left: 12px;
+}
+
+/* Temporadas */
+.seasons {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 0 auto;
+
+    & .img-season {
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 30%;
+    }
 }
