@@ -62,43 +62,41 @@ header {
     }
 }
 
-form {
+.form {
     display: flex;
     align-items: center;
+    background-color: #C9EBF2;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
 
+.form-input {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #C9EBF2;
+    outline: none;
+}
 
-    & .form-input {
-        padding: 10px 100px 10px 100px;
-        background-color: #C9EBF2;
-        border: none;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
+.btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
-    .form-input:focus {
-        outline: none;
-        border: none;
-    }
-
-    & .btn {
-        padding: 6px;
-        background-color: #C9EBF2;
-        border: none;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    
-        & img {
-            padding-right: 10px;
-            width: 30px;
-            height: 20px;
-            object-fit: contain;
-        }
-
-        & :hover {
-            cursor: pointer;
-        }
-
-    }
+.btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 /* Filtros de Pesquisa */
@@ -107,45 +105,81 @@ form {
     flex-flow: column;
 }
 
+.search-filters .filter-dropdown {
+    display: flex;
+    flex-direction: column; /* Colocar itens verticalmente */
+    align-items: center; /* Centralizar itens horizontalmente */
+    gap: 10px; /* Espaço entre os elementos */
+    margin-top: 20px; /* Ajustar margem superior */
+    font-weight: 600;
+}
+
+.search-filters {
+    width: 100%;
+}
+
+.search-filters .filter-dropdown select {
+    padding: 10px; /* Aumentar o padding para mais espaço dentro do dropdown */
+    border-radius: 10px;
+    border: none;
+
+}
+
+.search-filters .filter-dropdown select:focus {
+    outline: none;
+    border: none;
+}
+
+
+/* Layout da seção principal que contém filtros e cards */
+.filters-and-shows {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Espaçamento entre filtros e cards */
+    flex-wrap: nowrap; /* Impede quebra de linha dos elementos */
+}
+
+.filtered-shows .col {
+    flex: 1 0 31%; /* 3 cards por linha */
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+
+.filter-dropdown {
+    width: 100%; /* O dropdown ocupará 100% da largura do seu contêiner */
+    padding: 10px; /* Adiciona um espaçamento interno adequado */
+    margin-top: 10px; /* Espaçamento entre o título e o dropdown */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Assegura que a imagem mantenha a proporção */
+}
+
+/* Contêiner dos filtros */
 .search-filters {
     background-color: #44A6A6;
     padding: 20px;
     width: 300px;
-    height: 300px;
+    height: auto; /* Alterado para ajustar dinamicamente a altura */
     border-radius: 20px;
-    flex-wrap: wrap;
-
     box-shadow: 3px 3px 3px 3px #C9EBF2;
     text-align: center;
-
-    & h3 {
-        color: #fff;
-        margin: 0 auto;
-    }
-
-    & .dropdown-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: -200px;
-        gap: 10px;
-
-        & label {
-            color: #fff;
-        }
-
-        & select {
-            padding: 5px;
-            border-radius: 10px;
-            border: none;
-        }
-
-        & :focus {
-            outline: none;
-        }
-    }
 }
 
+.search-filters h3 {
+    color: #fff;
+    margin-bottom: 20px; /* Adicionado espaçamento abaixo do título */
+}
 
+/* Cards ajustados para ocupar o restante do espaço */
+.filtered-shows {
+    flex: 1; /* Faz com que os cards ocupem o restante do espaço disponível */
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Agora os cards ocupam 100% da largura disponível */
+}
